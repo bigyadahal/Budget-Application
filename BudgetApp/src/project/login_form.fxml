@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="249.0" prefWidth="402.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.LoginController">
+   <children>
+       <!-- Add Header Label -->
+       <Label layoutX="153.0" layoutY="14.0" text="Log In">
+           <font>
+               <Font name="Sitka Text Bold" size="36.0" />
+           </font>
+       </Label>
+       <!-- Add Email Text Field -->
+       <TextField fx:id="emailIdField" layoutX="171.0" layoutY="65.0" prefHeight="40" prefWidth="212.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </TextField>
+       <!-- Add Email Label -->
+       <Label layoutX="78.0" layoutY="70.0" text="Email : ">
+         <font>
+            <Font name="Century Gothic" size="22.0" />
+         </font>
+      </Label>
+       <!-- Add Password Field -->
+       <PasswordField fx:id="passwordField" layoutX="171.0" layoutY="122.0" prefHeight="40" prefWidth="212.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </PasswordField>
+       <!-- Add Password Label -->
+       <Label layoutX="34.0" layoutY="127.0" text="Password : ">
+         <font>
+            <Font name="Century Gothic" size="22.0" />
+         </font>
+      </Label>
+       <!-- Add new Sign Up Button -->
+       <Button fx:id="NewSignUpButton" defaultButton="true" layoutX="101.0" layoutY="187.0" onAction="#newsignup" prefHeight="40" prefWidth="155.0" style="-fx-background-color: Coral;" text="Create Account">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+       </Button>
+       <!-- Add Submit Button -->
+       <Button fx:id="submitButton" defaultButton="true" layoutX="283.0" layoutY="187.0" onAction="#login" prefHeight="40" prefWidth="100" style="-fx-background-color: Aquamarine;" text="Submit">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+       </Button>
+   </children>
+</AnchorPane>

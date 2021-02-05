@@ -1,0 +1,8 @@
+
+_ Income per month: $ 5000
+_ Total amount of living expenses is $ 550
+_ The saving period will start on 2021-01-25 and end on 2021-02-28
+_ Average saving per month is $ 4000
+✓ The saving goal can be satisfy.
+_ Leftover per month: $ 4450.
+ 

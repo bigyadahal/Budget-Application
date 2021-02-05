@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="413.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.SignUpController">
+   <children>
+       <!-- Add Header Label -->
+       <Label layoutX="850.0" layoutY="25.0" text="Create Account">
+           <font>
+               <Font name="Sitka Text Bold" size="36.0" />
+           </font>
+       </Label>
+       <!-- Add First Name Text Field -->
+       <TextField fx:id="firstNameField" layoutX="925.0" layoutY="85.0" prefHeight="40">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </TextField>
+       <!-- Add First Name Label -->
+       <Label layoutX="825.0" layoutY="94.0" text="First Name: ">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+       
+          <!-- Add Last Name Label -->
+       <Label layoutX="820.0" layoutY="146.0" text="Last Name: ">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+       <!-- Add First Name Text Field -->
+       <TextField fx:id="lastNameField" layoutX="925.0" layoutY="137.0" prefHeight="40">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </TextField>
+       <!-- Add Email Text Field -->
+       <TextField fx:id="emailAddressField" layoutX="925.0" layoutY="189.0" prefHeight="40">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </TextField>
+       <!-- Add email address Label -->
+       
+          <Label layoutX="857.0" layoutY="198.0" text="Email: ">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+       <!-- Add Gender Field -->
+       <PasswordField fx:id="passwordField" layoutX="925.0" layoutY="238.0" prefHeight="40">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </PasswordField>
+       
+             <!-- Add Password Label -->
+       <Label layoutX="825.0" layoutY="249.0" text="Password: ">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+       <!-- Add Add Field -->
+       <TextField fx:id="addressField" layoutX="925.0" layoutY="293.0" prefHeight="40">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </TextField>
+       
+          <!-- Add address Label -->
+       <Label layoutX="835.0" layoutY="302.0" text="Address: ">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+       <!-- Add Email Text Field -->
+       <TextField fx:id="phoneField" layoutX="925.0" layoutY="341.0" prefHeight="40">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </TextField>
+       
+          <!-- Add phone Label -->
+       <Label layoutX="850.0" layoutY="350.0" text="Phone: ">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+       <!-- Add Gender Field -->
+       <TextField fx:id="genderField" layoutX="925.0" layoutY="391.0" prefHeight="40">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </TextField>
+       
+          <Label layoutX="800.0" layoutY="400.0" text="Gender(M/F): ">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+       
+          <!-- Add Submit Button -->
+       <Button fx:id="signupButton" defaultButton="true" layoutX="975.0" layoutY="500.0" onAction="#signup" prefHeight="40" prefWidth="154.0" style="-fx-background-color: Aquamarine;" text="Create Account" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+       </Button>
+       
+        <!-- Add go back Button -->
+       <Button fx:id="gobackButton" defaultButton="true" layoutX="825.0" layoutY="500.0" onAction="#existingUser" prefHeight="40" prefWidth="123.0" style="-fx-background-color: Coral;" text="Existing User" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+       </Button>
+   </children>
+</AnchorPane>

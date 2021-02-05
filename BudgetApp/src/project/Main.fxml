@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="452.0" fitWidth="364.0" layoutX="-5.0">
+         <image>
+            <Image url="@472h.gif" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="textArea" editable="false" layoutX="12.0" layoutY="52.0" onDragDetected="#onTextArea" prefHeight="184.0" prefWidth="333.0">
+         <contextMenu>
+            <ContextMenu fx:id="context" onAction="#onContext">
+              <items>
+                <MenuItem fx:id="copy" mnemonicParsing="false" onAction="#onCopy" text="Copy" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextArea>
+      <Button fx:id="download" defaultButton="true" layoutX="221.0" layoutY="401.0" mnemonicParsing="false" onAction="#onDownload" style="-fx-background-color: Teal;" text="DOWNLOAD" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="income" defaultButton="true" layoutX="139.0" layoutY="251.0" mnemonicParsing="false" onAction="#onIncome" style="-fx-background-color: Aquamarine;" text="INCOME">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="bill" defaultButton="true" layoutX="105.0" layoutY="301.0" mnemonicParsing="false" onAction="#onBill" style="-fx-background-color: Aquamarine;" text="LIVING EXPENSES">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="saving" defaultButton="true" layoutX="119.0" layoutY="350.0" mnemonicParsing="false" onAction="#onSaving" style="-fx-background-color: Aquamarine;" text="SAVING GOAL">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="calculate" defaultButton="true" layoutX="28.0" layoutY="401.0" mnemonicParsing="false" onAction="#onCalculate" style="-fx-background-color: Teal;" text="CALCULATE" textFill="#fcf6f6">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="logOut" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onLogOut" style="-fx-background-color: pink;" text="Log Out">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="exit" layoutX="305.0" layoutY="14.0" mnemonicParsing="false" onAction="#onExit" style="-fx-background-color: pink;" text="Exit">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+   </children>
+</AnchorPane>
